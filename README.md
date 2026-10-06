@@ -1,4 +1,4 @@
-# The Goldberg Framework
+# Sam Goldberg
 
 Sam Goldberg's blog about biotech, food tech, and the business of new ideas.
 Live at **https://samgberg.github.io/testing/** (once GitHub Pages is turned on).
