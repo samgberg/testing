@@ -1,0 +1,20 @@
+# Site settings. Change these to update the whole site.
+title: The Goldberg Framework
+author: Sam Goldberg
+description: Notes on biotech, food tech, and the business of new ideas, by Sam Goldberg.
+email: goldbergjsam@gmail.com
+location: Boston, MA · San Francisco, CA
+github: samgberg
+linkedin: ""   # paste your LinkedIn URL here to show it
+
+# Where the site lives on GitHub Pages (samgberg.github.io/testing)
+url: https://samgberg.github.io
+baseurl: /testing
+
+permalink: /:year/:title/
+markdown: kramdown
+exclude: [README.md, Gemfile, Gemfile.lock]
+
+defaults:
+  - scope: { path: "", type: posts }
+    values: { layout: post }

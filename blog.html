@@ -1,0 +1,14 @@
+---
+layout: default
+title: Writing
+permalink: /blog/
+---
+<h1>Writing</h1>
+{% assign groups = site.posts | group_by: "category" | sort: "name" %}
+<p class="topics">Topics:
+  {% for g in groups %}<a href="#{{ g.name | slugify }}">{{ g.name }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}
+</p>
+{% for g in groups %}
+<h2 class="section-title" id="{{ g.name | slugify }}">{{ g.name }}</h2>
+{% include post-list.html posts=g.items %}
+{% endfor %}

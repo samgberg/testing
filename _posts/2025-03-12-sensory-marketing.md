@@ -1,0 +1,15 @@
+---
+title: "An Integrative Review of Sensory Marketing: Engaging the Senses to Affect Perception, Judgment and Behavior"
+category: Marketing
+summary: From the smell of Salt & Straw to the feel of a new iPhone, how brands use our senses, and what happens online.
+---
+
+**[An integrative review of sensory marketing: Engaging the senses to affect perception, judgment and behavior](https://www.sciencedirect.com/science/article/abs/pii/S1057740811000830)** (Aradhna Krishna, Ross School of Business)
+
+Humans love to sense things: touch, smell, see, hear and taste. How can we harness these senses to connect consumers to products, and in our digitized world how will this change?
+
+For my Bay Area (and Pacific Northwest) friends out here, if you are like me, I am sure you can recall that unmistakable smell of walking down the street past a Salt and Straw. As I walk down Fillmore Street, I am lured in by the sweet smell of the freshly baked cones which penetrates the air down the block. Well, I learned that smell is not actually the baking cones but a fragrance pumped into the air to attract customers and retain their signature scent. It became so popular they even made a [perfume](https://saltandstraw.com/blogs/news/introducing-the-most-innovative-ice-cream-topping-ever-culinary-perfume%E2%84%A2-an-edible-fragrance) out of it! This is an excellent example of sensory marketing. Think about your favorite hotel chain: can you recall the scent of it regardless of whether it's in New York City or Santa Fe? Or perhaps the feeling of touching and experiencing that new iPhone 16 at the Apple Store.
+
+Humans are incredibly attuned to their senses and in this paper, Krishna highlights the importance of harnessing sensorial properties in marketing. Sensorial marketing engages the human senses: touch, smell, sight, taste and sound. Like the feeling of unwrapping the foiled Hershey's Kiss. Krishna introduces intriguing psychological theories such as the Law of Contagion and how this impacts product placement (and explains why we keep the toilet paper separate from potato chips in the grocery store). Understanding and harnessing these sensorial properties can help marketers create brand recognition and connect.
+
+However, as we move to a more digitized marketplace, how might we be able to harness sensorial marketing online? Interacting with a product online, one can't access their senses, and hence "high need for touch" individuals are dissuaded and conflicted about the product. Some companies have found alternative ways for the consumer to interact with the product online. For example, in the beauty industry, companies like [Rare Beauty](https://www.rarebeauty.com/pages/shade-finder) use online quizzes to help consumers find their product and use descriptive, emotion evoking language. While this is not a comparable replacement for sensorial marketing, it engages connection with the consumer. I suggest that digital marketers creatively explore ways to engage the consumer's senses in a comparable manner to in-store experiences.

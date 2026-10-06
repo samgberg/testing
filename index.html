@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<section class="hero">
+  <h1>Hi, I'm Sam.</h1>
+  <p>I write about biotech, cellular agriculture, and the business side of new technology: what I'm reading, what I'm researching, and what I think it means.</p>
+  <p><a class="button" href="{{ '/about/' | relative_url }}">About me</a> <a class="button ghost" href="{{ '/blog/' | relative_url }}">Read the blog</a></p>
+</section>
+
+<h2 class="section-title">Latest writing</h2>
+{% assign recent = site.posts | slice: 0, 5 %}
+{% include post-list.html posts=recent %}
+<p><a href="{{ '/blog/' | relative_url }}">See all {{ site.posts.size }} posts →</a></p>
