@@ -1,0 +1,36 @@
+---
+layout: default
+title: Archive
+permalink: /blog/
+---
+<section class="archive">
+  <h1>Archive</h1>
+  {% assign groups = site.posts | group_by: "category" | sort: "name" %}
+  <div class="chips" role="group" aria-label="Filter by topic">
+    <button type="button" class="chip on" data-filter="all">All</button>
+    {% for g in groups %}<button type="button" class="chip" data-topic="{{ g.name | slugify }}" data-filter="{{ g.name | slugify }}">{{ g.name }} <span>{{ g.size }}</span></button>{% endfor %}
+  </div>
+  <ul class="rows">
+    {% for p in site.posts %}
+    <li data-topic="{{ p.category | slugify }}">
+      <a href="{{ p.url | relative_url }}">
+        <span class="row-date">{{ p.date | date: "%b %-d, %Y" }}</span>
+        <span class="row-main"><span class="row-title">{{ p.title }}</span>{% if p.summary %}<span class="row-summary">{{ p.summary }}</span>{% endif %}</span>
+        <span class="pill" data-topic="{{ p.category | slugify }}">{{ p.category }}</span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+<script>
+(function () {
+  var chips = document.querySelectorAll('.chip');
+  function apply(f) {
+    chips.forEach(function (c) { c.classList.toggle('on', c.dataset.filter === f); });
+    document.querySelectorAll('.rows li').forEach(function (li) { li.hidden = f !== 'all' && li.dataset.topic !== f; });
+  }
+  chips.forEach(function (c) { c.addEventListener('click', function () { apply(c.dataset.filter); }); });
+  var h = location.hash.slice(1);
+  if (h && document.querySelector('.chip[data-filter="' + h + '"]')) apply(h);
+})();
+</script>

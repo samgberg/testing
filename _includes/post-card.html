@@ -1,0 +1,10 @@
+{% assign p = include.post %}
+<a class="card{% if include.big %} card-big{% endif %}" href="{{ p.url | relative_url }}" data-topic="{{ p.category | slugify }}">
+  {% include cover.html post=p %}
+  <div class="card-body">
+    <span class="eyebrow">{{ p.category }}</span>
+    <span class="card-title">{{ p.title }}</span>
+    {% if p.summary %}<span class="card-summary">{{ p.summary }}</span>{% endif %}
+    <span class="meta">{{ p.date | date: "%b %-d, %Y" }} · {{ p.content | number_of_words | divided_by: 200 | plus: 1 }} min read</span>
+  </div>
+</a>
