@@ -1,5 +1,5 @@
 ---
-title: My Favorite Media Running List
+title: Climate Innovation Media
 category: Reading List
 summary: The podcasts, books, journals and blogs I keep coming back to.
 ---
