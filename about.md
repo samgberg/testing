@@ -8,4 +8,4 @@ Hi! I'm Sam Goldberg, a recent graduate of Tufts University where I studied Biom
 
 ## Get in touch
 
-I'm based in Boston and San Francisco. The best way to reach me is [{{ site.email }}](mailto:{{ site.email }}).
+I'm based in Boston and San Francisco. The best way to reach me is [goldbergjsam@gmail.com](mailto:goldbergjsam@gmail.com).

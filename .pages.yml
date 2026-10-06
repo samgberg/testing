@@ -1,0 +1,58 @@
+# Settings for the Pages CMS editor (https://app.pagescms.org).
+media:
+  input: assets/images
+  output: /testing/assets/images
+  categories: [image]
+
+content:
+  - name: posts
+    label: Blog posts
+    type: collection
+    path: _posts
+    filename:
+      template: "{year}-{month}-{day}-{primary}.md"
+      field: false
+    view:
+      fields: [title, category]
+      default:
+        sort: filename
+        order: desc
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: category
+        label: Topic
+        type: select
+        options:
+          values: [Biotechnology, Cellular Agriculture, Marketing, Reading List]
+      - name: summary
+        label: One-line summary (shows in the post list)
+        type: string
+      - name: image
+        label: Cover image (optional)
+        type: image
+      - name: body
+        label: Post
+        type: rich-text
+
+  - name: about
+    label: About page
+    type: file
+    path: about.md
+    fields:
+      - name: layout
+        type: string
+        hidden: true
+        default: page
+      - name: title
+        label: Title
+        type: string
+      - name: permalink
+        type: string
+        hidden: true
+        default: /about/
+      - name: body
+        label: Text
+        type: rich-text

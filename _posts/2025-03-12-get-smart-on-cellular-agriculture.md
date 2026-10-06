@@ -1,10 +1,9 @@
 ---
 title: Get Smart On Cellular Agriculture
 category: Cellular Agriculture
+image: https://static.wixstatic.com/media/55efa3_5e9d2ff8173a4a84964ff1432a9b1310~mv2.gif
 summary: A plain-language guide to cultivated meat, how it's made, where the industry stands, and what's holding it back.
 ---
-
-![Cultivated meat animation](https://static.wixstatic.com/media/55efa3_5e9d2ff8173a4a84964ff1432a9b1310~mv2.gif)
 
 If you know me personally, one thing you very quickly learned was my love of cellular agriculture and cultivated meat. Or perhaps you've recently opened the news to see headlines of "lab grown meat" coming up in your feed. But what is this mysterious cell grown meat? I am here to help answer your questions, explain the basics of cellular agriculture and cultivated meat, and share with you "how the sausage is made".
 

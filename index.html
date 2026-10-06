@@ -1,13 +1,21 @@
 ---
 layout: default
 ---
-<section class="hero">
-  <h1>Hi, I'm Sam.</h1>
-  <p>I write about biotech, cellular agriculture, and the business side of new technology: what I'm reading, what I'm researching, and what I think it means.</p>
-  <p><a class="button" href="{{ '/about/' | relative_url }}">About me</a> <a class="button ghost" href="{{ '/blog/' | relative_url }}">Read the blog</a></p>
+<section class="intro">
+  <span class="avatar big" aria-hidden="true">SG</span>
+  <h1>{{ site.title }}</h1>
+  <p>{{ site.tagline }}</p>
 </section>
 
-<h2 class="section-title">Latest writing</h2>
-{% assign recent = site.posts | slice: 0, 5 %}
-{% include post-list.html posts=recent %}
-<p><a href="{{ '/blog/' | relative_url }}">See all {{ site.posts.size }} posts →</a></p>
+{% assign featured = site.posts.first %}
+<section class="featured">
+  {% include post-card.html post=featured big=true %}
+</section>
+
+<section>
+  <h2 class="section-title">Latest</h2>
+  <div class="grid">
+    {% for p in site.posts offset: 1 limit: 6 %}{% include post-card.html post=p %}{% endfor %}
+  </div>
+  <p class="see-all"><a href="{{ '/blog/' | relative_url }}">See all {{ site.posts.size }} posts →</a></p>
+</section>

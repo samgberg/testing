@@ -1,8 +1,8 @@
 <footer class="site-footer">
-  <div class="wrap">
+  <div class="bar">
     <span>© {{ 'now' | date: '%Y' }} {{ site.author }}</span>
     <span class="links">
-      <a href="mailto:{{ site.email }}">Email</a>
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
       {% if site.linkedin != "" %}<a href="{{ site.linkedin }}">LinkedIn</a>{% endif %}
       <a href="https://github.com/{{ site.github }}">GitHub</a>
     </span>

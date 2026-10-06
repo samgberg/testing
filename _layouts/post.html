@@ -2,13 +2,31 @@
 layout: default
 ---
 <article class="post">
-  <header>
-    {% if page.category %}<a class="tag" href="{{ '/blog/' | relative_url }}#{{ page.category | slugify }}">{{ page.category }}</a>{% endif %}
+  <header class="post-head">
+    {% if page.category %}<a class="pill" data-topic="{{ page.category | slugify }}" href="{{ '/blog/' | relative_url }}#{{ page.category | slugify }}">{{ page.category }}</a>{% endif %}
     <h1>{{ page.title }}</h1>
-    <p class="meta">{{ page.date | date: "%B %-d, %Y" }} · {{ content | number_of_words | divided_by: 200 | plus: 1 }} min read</p>
+    {% if page.summary %}<p class="dek">{{ page.summary }}</p>{% endif %}
+    <div class="byline">
+      <span class="avatar" aria-hidden="true">SG</span>
+      <span><strong>{{ site.author }}</strong><br>{{ page.date | date: "%B %-d, %Y" }} · {{ content | number_of_words | divided_by: 200 | plus: 1 }} min read</span>
+    </div>
   </header>
+  {% if page.image %}<figure class="hero-img"><img src="{{ page.image }}" alt="" onerror="this.parentNode.remove()"></figure>{% endif %}
   <div class="prose">
     {{ content }}
   </div>
-  <p class="back"><a href="{{ '/blog/' | relative_url }}">← All writing</a></p>
+  <aside class="author-box">
+    <span class="avatar big" aria-hidden="true">SG</span>
+    <div>
+      <strong>Written by {{ site.author }}</strong>
+      <p>Tufts graduate in Biomedical Engineering, Economics, and Entrepreneurship. Writing about technology for human and planetary health. <a href="{{ '/about/' | relative_url }}">More about me</a></p>
+    </div>
+  </aside>
 </article>
+<section class="more">
+  <h2 class="section-title">Keep reading</h2>
+  <div class="grid">
+    {% assign shown = 0 %}
+    {% for p in site.posts %}{% if p.url != page.url and shown < 3 %}{% include post-card.html post=p %}{% assign shown = shown | plus: 1 %}{% endif %}{% endfor %}
+  </div>
+</section>

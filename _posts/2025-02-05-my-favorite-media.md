@@ -18,7 +18,7 @@ summary: The podcasts, books, journals and blogs I keep coming back to.
 
 ## Journals
 
-1. **[Journal of Product Innovation Management](https://onlinelibrary.wiley.com/journal/15405885)**: A peer-reviewed journal focusing on managerial knowledge of innovation management and product development. I have been reading articles from here for my Trinity College Dublin New Product Development module and found many great articles! Check out my [review of a JPIM paper on drug development]({% post_url 2025-02-05-failure-and-success-in-drug-development %}).
+1. **[Journal of Product Innovation Management](https://onlinelibrary.wiley.com/journal/15405885)**: A peer-reviewed journal focusing on managerial knowledge of innovation management and product development. I have been reading articles from here for my Trinity College Dublin New Product Development module and found many great articles! Check out my [review of a JPIM paper on drug development](https://samgberg.github.io/testing/2025/failure-and-success-in-drug-development/).
 
 ## Blogs and Insights
 
